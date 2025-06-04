@@ -14,5 +14,5 @@ final itemProvider = Provider((ref) {
 });
 
 final greenItemProvider = Provider((ref) {
-  return itemList.where((p) => p.contains("green")).toList();
+  return itemList.where((p) => p.contains("Green")).toList();
 });
