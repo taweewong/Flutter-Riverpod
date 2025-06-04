@@ -6,6 +6,7 @@ import '2_stateful_consumer/stateful_consumer.dart';
 import '3_generated_simple_provider/test_generation.dart';
 import '4_notifier_provider/stateful_notifier.dart';
 import '5_generated_notifier_provider/stateful_notifier_use_generated.dart';
+import '6_dependent_provider/dependent.dart';
 
 void main() {
   runApp(ProviderScope(child: const MyApp()));
@@ -25,7 +26,8 @@ class MyApp extends StatelessWidget {
       // home: const StatefulConsumerPage(),
       // home: const TestGeneratedConsumerPage(),
       // home: StatefulNotifierPage(""),
-      home: StatefulNotifierUseGeneratedPage(""),
+      // home: StatefulNotifierUseGeneratedPage(""),
+      home: DependentPage(""),
     );
   }
 }
