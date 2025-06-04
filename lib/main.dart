@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '1_stateless_consumer/stateless_consumer.dart';
 import '2_stateful_consumer/stateful_consumer.dart';
 import '3_generated_simple_provider/test_generation.dart';
+import '4_notifier_provider/stateful_notifier.dart';
 
 void main() {
   runApp(ProviderScope(child: const MyApp()));
@@ -21,7 +22,8 @@ class MyApp extends StatelessWidget {
       ),
       // home: const StatelessConsumerPage(),
       // home: const StatefulConsumerPage(),
-      home: const TestGeneratedConsumerPage(),
+      // home: const TestGeneratedConsumerPage(),
+      home: StatefulNotifierPage(""),
     );
   }
 }
